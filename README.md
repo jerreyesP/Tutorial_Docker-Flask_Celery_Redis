@@ -10,3 +10,11 @@ Based on the tutorial: https://github.com/soumilshah1995/Python-Flask-Redis-Cele
  - For check the status of Celery, use the command on the console of docker-desktop for celery, in this case, simple_worker: __celery -A tasks status__
  - For execute the periodic task with cron_tab of celery, execute on the console of the service docker, on docker-desktop, for simple_worker, the next command: __celery -A tasks beat -s /tmp/celerybeat-schedule__
 
+## How execute periodic task with celery
+
+1. Write 'docker-compose up' on the console, in my case was Pycharm
+2. Go to Docker-desktop and get inside the console of the service of celery, in this case: simple_worker and write: __celery -A tasks beat -s /tmp/celerybeat-schedule__
+
+
+Thanks to soumilshah1995, his tutorial help me a lot for understand a little bit docker, celery, redis and all of this. 
+_https://github.com/soumilshah1995/Python-Flask-Redis-Celery-Docker_
