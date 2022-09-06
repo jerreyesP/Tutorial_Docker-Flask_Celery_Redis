@@ -1,9 +1,8 @@
 # Tutorial_Docker-Flask_Celery_Redis
 
-
-## Problemas que han surgido:
-
 Based on the tutorial: https://github.com/soumilshah1995/Python-Flask-Redis-Celery-Docker/tree/main/Part1
+
+## Problems:
 
  - When I execute _'docker-compose up'_ an errors occurred, it didn't found the route or something like that because i didn't open 'docker-desktop', when I inicilice it, the command execute correctly.
  - There was an error in the dockerfile for the _'COPY'_, I forggoten put the bar '/' on the _requirements.txt_. (https://stackoverflow.com/questions/55072179/failed-to-execute-script-docker-compose)
